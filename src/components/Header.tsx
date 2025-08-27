@@ -192,9 +192,9 @@ const Header = () => {
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="mt-2 space-y-2">
-                        {[...products, ...callsToAction].map((item) => (
+                        {[...products, ...callsToAction].map((item, index) => (
                           <Disclosure.Button
-                            key={item.name}
+                            key={index}
                             as="a"
                             href={item.href}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-white hover:bg-blue-800"
